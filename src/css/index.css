@@ -1,0 +1,95 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;&display=swap');
+
+/*
+Variables
+*/
+:root {
+  --color-green: #59b02f;
+  --color-green-dark: #509e2a;
+  --color-grey: #efefee;
+  --color-grey-dark: #414141;
+  --color-white: #ffffff;
+}
+
+/*Css Global*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.7rem;
+  line-height: 2;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1.7;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.1rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 678px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 2.9rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.button-main {
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-green);
+  width: 90%;
+  min-width: 32rem;
+  max-width: 34.3rem;
+  border-radius: 5px;
+  transition: background-color 0.25s ease-in-out 0.1s;
+}
+
+.button-main a {
+  display: block;
+  padding: 2rem;
+}
+
+.button-main:hover {
+  background-color: #509e2a;
+}
